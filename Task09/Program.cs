@@ -22,10 +22,14 @@ int MaxDigit(int num)
     int secondDigit = num % 10;
     // if (firstDigit > secondDigit) return firstDigit;
     // return secondDigit;
-    if (firstDigit == secondDigit) return 0;
+    if (IsEqualDigits(firstDigit, secondDigit)) return 0;
     return firstDigit > secondDigit ? firstDigit : secondDigit;
 }
 
+bool IsEqualDigits(int num1, int num2)
+{
+    return num1 == num2;
+}
 //int result = MaxDigit (number);
 int maxDigit = MaxDigit(number);
 string result = maxDigit > 0 ? maxDigit.ToString() : "Цифры равны";
