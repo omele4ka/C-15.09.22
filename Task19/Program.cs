@@ -7,10 +7,12 @@
 
 Console.WriteLine("Введите пятизначное число: ");
 int number = Convert.ToInt32(Console.ReadLine());
-if (number < 10000 && number > -9999) Console.WriteLine("Введите корректное число");
+if (number < 10000 && number > 99999) Console.WriteLine("Введите корректное число");
+
 
 void FindDigit(int num) 
 {
+
     int num1 = num / 10000;
     int num2 = num / 1000 % 10;
     int num4 = num % 100 / 10;
