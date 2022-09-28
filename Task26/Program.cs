@@ -19,5 +19,5 @@ int FindNumberLength(int number)
     return counter;
 }
 
-int result = FindNumberLength(num);
+int result = FindNumberLength(Math.Abs(num));
 Console.WriteLine(result);
