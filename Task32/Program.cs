@@ -25,17 +25,15 @@ void PrintArray (int[] array)
     Console.WriteLine("]");
 }
 
-int[] InverseSign (int[] array)
+void InverseSign (int[] array)
 {
     for (int i = 0; i < array.Length; i++)
     {
         array[i] = array[i] * -1;
     }
-    return array;
 }
 
 int[] arr = CreateArrayRndInt(7, -10, 10);
 PrintArray(arr);
-
-int[] newArray = InverseSign(arr);
-PrintArray(newArray);
+InverseSign(arr);
+PrintArray(arr);
