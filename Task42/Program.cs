@@ -22,3 +22,14 @@ Console.WriteLine("Дорогой пользователь, введите чи�
     }
     return binaryNum;
  }
+
+ // Рекурсия
+
+int num = 13;
+DecToBin(num);
+void DecToBin (int numb)
+{
+    if (numb == 0) return;
+    DecToBin(numb / 2);
+    Console.Write(numb % 2);
+}
