@@ -9,7 +9,7 @@
 // 8 4 4 2
 
 
-int[,] array2D = CreateMatrixRndInt(3, 3, 1, 10);
+int[,] array2D = CreateMatrixRndInt(3, 4, 1, 10);
 PrintMatrix(array2D);
 Console.WriteLine();
 MaxToMinElemInRow(array2D);
@@ -40,7 +40,7 @@ void MaxToMinElemInRow (int[,] matrix)
 
     for (int i = 0; i < matrix.GetLength(0); i++)
     {
-        int[] arrayRow = new int[matrix.GetLength(0)]; 
+        int[] arrayRow = new int[matrix.GetLength(1)]; 
         for (int j = 0; j < matrix.GetLength(1); j++)
         {
             arrayRow[j] = matrix[i, j];
