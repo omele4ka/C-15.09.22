@@ -14,10 +14,15 @@ Console.WriteLine();
 int result = GetNumToDegree (number, degree);
 Console.WriteLine(result);
 
+// int GetNumToDegree (int num, int deg)
+// {
+//     if (deg == 0) return 1;
+//     int res = num;
+//     res *= GetNumToDegree(num, deg - 1);
+//     return res;
+// }
+
 int GetNumToDegree (int num, int deg)
 {
-    if (deg == 0) return 1;
-    int res = num;
-    res *= GetNumToDegree(num, deg - 1);
-    return res;
+    return deg == 0 ? 1 : num * GetNumToDegree(num, deg - 1);
 }
